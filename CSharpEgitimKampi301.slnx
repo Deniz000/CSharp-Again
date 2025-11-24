@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="BusinessLayer/BusinessLayer.csproj" Id="f5ba5f24-2ce7-4f2a-ad6a-23aa3f3b5a25" />
+  <Project Path="CSharpEgitimKampi301.EFProject/CSharpEgitimKampi301.EFProject.csproj" Id="4e34f485-e2b0-43e3-a304-cf39bb12a833" />
+  <Project Path="DataAccessLayer/DataAccessLayer.csproj" Id="8b797614-f941-4da7-8d90-4b05e89a5364" />
+  <Project Path="EntityLayer/EntityLayer.csproj" Id="49ee9497-bf7b-4d9f-87d5-f0e7eea69d50" />
+  <Project Path="PresantationLayer/PresantationLayer.csproj" Id="21115418-9ed6-460c-b622-9368cca22ec3" />
+</Solution>

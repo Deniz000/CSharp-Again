@@ -77,5 +77,10 @@ namespace BusinessLayer.Concrete
 
             return _productDal.GetById(id);
         }
+
+        public List<Object> GetProductsWithCategory()
+        {
+            return _productDal.GetProductsWithCategory();
+        }
     }
 }

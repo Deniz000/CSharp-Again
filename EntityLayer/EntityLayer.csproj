@@ -46,6 +46,7 @@
     <Compile Include="Concrete\Customer.cs" />
     <Compile Include="Concrete\Order.cs" />
     <Compile Include="Concrete\Product.cs" />
+    <Compile Include="DtoLayer\ProductWithCategoryDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,7 +1,7 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
-using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using EntityLayer.DtoLayer;
 using System;
 using System.Collections.Generic;
 
@@ -78,9 +78,10 @@ namespace BusinessLayer.Concrete
             return _productDal.GetById(id);
         }
 
-        public List<Object> GetProductsWithCategory()
+        public List<ProductWithCategoryDto> GetProductsWithCategory()
         {
             return _productDal.GetProductsWithCategory();
         }
+
     }
 }

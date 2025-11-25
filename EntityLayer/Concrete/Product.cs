@@ -15,7 +15,6 @@ namespace EntityLayer.Concrete
         public string ProductDescription { get; set; }
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
-        //public string CategoryName { get; set; }
         public List<Order> Orders { get; set; }
 
     }

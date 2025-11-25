@@ -1,4 +1,5 @@
 ﻿using EntityLayer.Concrete;
+using EntityLayer.DtoLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace BusinessLayer.Abstract
 {
     public interface IProductService : IGenericService<Product>
     {
-        List<Object> GetProductsWithCategory();
-
+        List<ProductWithCategoryDto> GetProductsWithCategory();
+        
     }
 }

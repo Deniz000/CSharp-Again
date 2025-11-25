@@ -38,14 +38,14 @@
             this.btnListele = new System.Windows.Forms.Button();
             this.txtProductId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtProductPRice = new System.Windows.Forms.TextBox();
+            this.txtProductPrice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtProductStock = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbProductCategory = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtProductDescribtion = new System.Windows.Forms.TextBox();
+            this.txtProductDescription = new System.Windows.Forms.TextBox();
             this.btnlistele2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +59,7 @@
             this.btnGetById.TabIndex = 26;
             this.btnGetById.Text = "Get with Id";
             this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // btnUpdate
             // 
@@ -69,6 +70,7 @@
             this.btnUpdate.TabIndex = 25;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -77,7 +79,7 @@
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(177, 46);
             this.btnDelete.TabIndex = 24;
-            this.btnDelete.Text = "Sil";
+            this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -88,8 +90,9 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(177, 46);
             this.btnAdd.TabIndex = 23;
-            this.btnAdd.Text = "Ekle";
+            this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtProductName
             // 
@@ -127,7 +130,7 @@
             this.btnListele.Name = "btnListele";
             this.btnListele.Size = new System.Drawing.Size(85, 46);
             this.btnListele.TabIndex = 16;
-            this.btnListele.Text = "Listele";
+            this.btnListele.Text = "List";
             this.btnListele.UseVisualStyleBackColor = true;
             this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
@@ -148,13 +151,13 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Ürün Id : ";
             // 
-            // txtProductPRice
+            // txtProductPrice
             // 
-            this.txtProductPRice.Location = new System.Drawing.Point(119, 146);
-            this.txtProductPRice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtProductPRice.Name = "txtProductPRice";
-            this.txtProductPRice.Size = new System.Drawing.Size(177, 22);
-            this.txtProductPRice.TabIndex = 30;
+            this.txtProductPrice.Location = new System.Drawing.Point(119, 146);
+            this.txtProductPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtProductPrice.Name = "txtProductPrice";
+            this.txtProductPrice.Size = new System.Drawing.Size(177, 22);
+            this.txtProductPrice.TabIndex = 30;
             // 
             // label4
             // 
@@ -209,14 +212,14 @@
             this.label7.TabIndex = 33;
             this.label7.Text = "Ürün Açıklaması : ";
             // 
-            // txtProductDescribtion
+            // txtProductDescription
             // 
-            this.txtProductDescribtion.Location = new System.Drawing.Point(119, 231);
-            this.txtProductDescribtion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtProductDescribtion.Multiline = true;
-            this.txtProductDescribtion.Name = "txtProductDescribtion";
-            this.txtProductDescribtion.Size = new System.Drawing.Size(177, 93);
-            this.txtProductDescribtion.TabIndex = 34;
+            this.txtProductDescription.Location = new System.Drawing.Point(119, 231);
+            this.txtProductDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtProductDescription.Multiline = true;
+            this.txtProductDescription.Name = "txtProductDescription";
+            this.txtProductDescription.Size = new System.Drawing.Size(177, 93);
+            this.txtProductDescription.TabIndex = 34;
             // 
             // btnlistele2
             // 
@@ -225,7 +228,7 @@
             this.btnlistele2.Name = "btnlistele2";
             this.btnlistele2.Size = new System.Drawing.Size(85, 46);
             this.btnlistele2.TabIndex = 35;
-            this.btnlistele2.Text = "Listele2";
+            this.btnlistele2.Text = "List2";
             this.btnlistele2.UseVisualStyleBackColor = true;
             this.btnlistele2.Click += new System.EventHandler(this.btnlistele2_Click);
             // 
@@ -236,11 +239,11 @@
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1540, 660);
             this.Controls.Add(this.btnlistele2);
-            this.Controls.Add(this.txtProductDescribtion);
+            this.Controls.Add(this.txtProductDescription);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cmbProductCategory);
-            this.Controls.Add(this.txtProductPRice);
+            this.Controls.Add(this.txtProductPrice);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtProductStock);
             this.Controls.Add(this.label5);
@@ -257,6 +260,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmProduct";
             this.Text = "FrmProduct";
+            this.Load += new System.EventHandler(this.FrmProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -275,14 +279,14 @@
         private System.Windows.Forms.Button btnListele;
         private System.Windows.Forms.TextBox txtProductId;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtProductPRice;
+        private System.Windows.Forms.TextBox txtProductPrice;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtProductStock;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbProductCategory;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtProductDescribtion;
+        private System.Windows.Forms.TextBox txtProductDescription;
         private System.Windows.Forms.Button btnlistele2;
     }
 }

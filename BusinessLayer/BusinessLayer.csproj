@@ -48,8 +48,8 @@
     <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Concrete\CategoryManager.cs" />
     <Compile Include="Concrete\CustomerManager.cs" />
-    <Compile Include="Concrete\IProductManager.cs" />
     <Compile Include="Concrete\OrderManager.cs" />
+    <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
